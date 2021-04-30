@@ -131,8 +131,8 @@ textSprite.setOutline(1, 6)
 textSprite.setPosition(80, 80)
 tiles.setTilemap(tilemap`level1`)
 forever(function () {
-    pause(585)
+    pause(583)
     chomps += 1
     textSprite.setText(convertToText(chomps))
-    music.footstep.play()
+    music.knock.play()
 })
