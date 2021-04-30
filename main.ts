@@ -125,3 +125,14 @@ mySprite,
 100,
 true
 )
+let chomps = 0
+let textSprite = textsprite.create(convertToText(chomps))
+textSprite.setOutline(1, 6)
+textSprite.setPosition(80, 80)
+tiles.setTilemap(tilemap`level1`)
+forever(function () {
+    pause(585)
+    chomps += 1
+    textSprite.setText(convertToText(chomps))
+    music.footstep.play()
+})
